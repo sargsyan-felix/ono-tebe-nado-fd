@@ -1,6 +1,6 @@
 # ono-tebe-nado-fd
 
-[https://github.com/sargsyan-felix/ono-tebe-nado-fd]
+https://github.com/sargsyan-felix/ono-tebe-nado-fd
 
 ---
 
