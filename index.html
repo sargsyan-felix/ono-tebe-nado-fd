@@ -12,21 +12,21 @@
 	<body>
 		<header class="header">
 			<nav class="header__nav" aria-label="Основная навигация">
-				<ul class="header__nav-list">
-					<li class="header__nav-list-item header__nav-list-item_first">
-						<a href="#main-banner" class="header__nav-item active">главная</a>
+				<ul class="nav-list">
+					<li class="nav-list__item nav-list__item--no-marker">
+						<a href="#main-banner" class="nav-link nav-link--active">главная</a>
 					</li>
-					<li class="header__nav-list-item">
-						<a href="#lots" class="header__nav-item">посмотреть лоты</a>
+					<li class="nav-list__item">
+						<a href="#lots" class="nav-link">посмотреть лоты</a>
 					</li>
-					<li class="header__nav-list-item">
-						<a href="#auction" class="header__nav-item">об аукционе</a>
+					<li class="nav-list__item">
+						<a href="#auction" class="nav-link">об аукционе</a>
 					</li>
 				</ul>
 				<img class="header__logo" src="images/logo-black.svg" alt="logo" />
 			</nav>
 
-			<address class="address address--header" aria-label="Контакты">
+			<address class="address" aria-label="Контакты">
 				<a href="tel:+79995555555" class="address__link">+9 999 555 5555</a>
 				<a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
 				<span class="address__text">наб. Принсенграхт 263-265, Амстердам</span>
@@ -34,43 +34,33 @@
 		</header>
 
 		<main class="main">
-			<section class="main__banner" id="main-banner">
+			<section class="hero" id="main-banner">
 				<div class="overlay"></div>
-				<h1 class="main__banner-title">
-					<span class="main__banner-title-line main__banner-title-line_left"
-						>ОНО</span
-					>
-					<span class="main__banner-title-line main__banner-title-line_center"
-						>ТЕБЕ</span
-					>
-					<span class="main__banner-title-line main__banner-title-line_right"
-						>НАДО</span
-					>
+				<h1 class="hero__title">
+					<span class="hero__title-line hero__title-line--left">ОНО</span>
+					<span class="hero__title-line hero__title-line--center">ТЕБЕ</span>
+					<span class="hero__title-line hero__title-line--right">НАДО</span>
 				</h1>
 
-				<div class="main__banner-footer">
-					<p class="main__banner-footer-text">
-						Аукцион вещей, в которые никто не верил
-					</p>
-					<button class="main__banner-footer-btn">Сделать ставку</button>
+				<div class="hero__footer">
+					<p class="hero__subtitle">Аукцион вещей, в которые никто не верил</p>
+					<button class="hero__button">Сделать ставку</button>
 				</div>
 			</section>
 
-			<section class="main__banner-lots" id="lots">
-				<h2 class="main__banner-lots-title">лоты</h2>
-				<ul class="main__banner-lots-cards">
-					<li class="main__banner-lots-item">
-						<a class="main__banner-lots-link" href="#">
-							<article
-								class="main__banner-lots-card main__banner-lots-card_type_film"
-							>
+			<section class="lots" id="lots">
+				<h2 class="lots__title">лоты</h2>
+				<ul class="lots__list">
+					<li class="lots__item">
+						<a class="lots__link" href="#">
+							<article class="lot-card lot-card--film">
 								<div class="overlay"></div>
-								<div class="main__banner-lots-card-info">
-									<h3 class="main__banner-lots-card-title">
+								<div class="lot-card__content">
+									<h3 class="lot-card__title">
 										Фильм режиссёра, который бросил киношколу
 									</h3>
 
-									<p class="main__banner-lots-card-text">
+									<p class="lot-card__text">
 										Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
 										ставка, если бы вы не знали, что режиссёр — Пол Томас
 										Андерсон?
@@ -80,19 +70,17 @@
 						</a>
 					</li>
 
-					<li class="main__banner-lots-item">
-						<a class="main__banner-lots-link" href="#">
-							<article
-								class="main__banner-lots-card main__banner-lots-card_type_book"
-							>
+					<li class="lots__item">
+						<a class="lots__link" href="#">
+							<article class="lot-card lot-card--book">
 								<div class="overlay"></div>
-								<div class="main__banner-lots-card-info">
-									<h3 class="main__banner-lots-card-title">
+								<div class="lot-card__content">
+									<h3 class="lot-card__title">
 										Книга, где описан один скучный день из жизни рекламного
 										агента
 									</h3>
 
-									<p class="main__banner-lots-card-text">
+									<p class="lot-card__text">
 										Объёмом почти в тысячу страниц. Иногда без знаков препинания
 										и с переходами на древнеанглийский. В ней одновременно
 										рассказывается о 16 июня 1904 года и об истории литературы,
@@ -105,18 +93,16 @@
 						</a>
 					</li>
 
-					<li class="main__banner-lots-item">
-						<a class="main__banner-lots-link" href="#">
-							<article
-								class="main__banner-lots-card main__banner-lots-card_type_picture"
-							>
+					<li class="lots__item">
+						<a class="lots__link" href="#">
+							<article class="lot-card lot-card--picture">
 								<div class="overlay"></div>
-								<div class="main__banner-lots-card-info">
-									<h3 class="main__banner-lots-card-title">
+								<div class="lot-card__content">
+									<h3 class="lot-card__title">
 										Картина, которую повторит даже 5-летний сын маминой подруги
 									</h3>
 
-									<p class="main__banner-lots-card-text">
+									<p class="lot-card__text">
 										Ну действительно, там линия, тут кружочек, а здесь и вовсе
 										что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
 										котиков... Сколько бы вы на такое поставили, если бы не
@@ -127,22 +113,22 @@
 						</a>
 					</li>
 				</ul>
-				<a href="#" class="main__banner-lots-more">посмотреть больше</a>
+				<a href="#" class="lots__more-link">посмотреть больше</a>
 			</section>
 
-			<section class="main__auction" id="auction">
-				<div class="main__auction__logo">
+			<section class="about" id="auction">
+				<div class="about__logo">
 					<img
-						class="main__auction__logo-img"
+						class="about__logo-image"
 						src="images/logo-white.svg"
 						alt="logo"
 					/>
 				</div>
 
-				<div class="main__auction-info">
-					<h2 class="main__auction-info-title">Об аукционе</h2>
+				<div class="about__content">
+					<h2 class="about__title">Об аукционе</h2>
 
-					<p class="main__auction-info-text">
+					<p class="about__text">
 						Здесь вы не встретите очередное пафосное собрание невероятно
 						дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
 						один аукцион. Потому что кому нужен дневник девочки-подростка или
@@ -150,7 +136,7 @@
 						странные вещи, созданные любителями?
 					</p>
 
-					<p class="main__auction-info-text">
+					<p class="about__text">
 						Слишком сложные или, наоборот, слишком простые. Опережающие своё
 						время. В пух и прах растерзанные критиками. Непринятые и непонятые.
 						Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -163,7 +149,7 @@
 		</main>
 
 		<footer class="footer">
-			<address class="address address--footer" aria-label="Контакты">
+			<address class="address" aria-label="Контакты">
 				<a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
 				<a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
 				<span class="address__text"
@@ -171,26 +157,26 @@
 				>
 			</address>
 			<nav class="footer__nav">
-				<a href="#main-banner" class="footer__nav-link active">главная</a>
-				<a href="#lots" class="footer__nav-link">посмотреть лоты</a>
-				<a href="#auction" class="footer__nav-link">об аукционе</a>
+				<a href="#main-banner" class="footer__link footer__link--active"
+					>главная</a
+				>
+				<a href="#lots" class="footer__link">посмотреть лоты</a>
+				<a href="#auction" class="footer__link">об аукционе</a>
 			</nav>
 			<div class="footer__social">
-				<a
-					href="https://www.youtube.com/"
-					target="_blank"
-					class="footer__social-link"
-					><img src="images/yt.svg" alt="YouTube"
-				/></a>
-				<a href="https://vk.com/" target="_blank" class="footer__social-link"
-					><img src="images/vk.svg" alt="VK"
-				/></a>
+				<a href="https://www.youtube.com/" target="_blank" class="social-link">
+					<img src="images/yt.svg" alt="YouTube" />
+				</a>
+				<a href="https://vk.com/" target="_blank" class="social-link">
+					<img src="images/vk.svg" alt="VK" />
+				</a>
 				<a
 					href="https://www.pinterest.com/"
 					target="_blank"
-					class="footer__social-link"
-					><img src="images/pinterest.svg" alt="Pinterest"
-				/></a>
+					class="social-link"
+				>
+					<img src="images/pinterest.svg" alt="Pinterest" />
+				</a>
 			</div>
 		</footer>
 	</body>
